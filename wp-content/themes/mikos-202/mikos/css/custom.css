@@ -1,0 +1,13 @@
+/* new style for theme */
+/* for unit test */
+.page #wrap section ul ul {
+  margin-left: 20px;
+  list-style-type: disc; }
+.page #wrap section ol ol {
+  margin-left: 20px; }
+
+#counters ul li,
+#team .team ul li {
+  list-style-type: none; }
+
+/*# sourceMappingURL=custom.css.map */
