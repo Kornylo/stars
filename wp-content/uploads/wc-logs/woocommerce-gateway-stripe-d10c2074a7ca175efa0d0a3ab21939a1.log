@@ -1,0 +1,315 @@
+06-09-2017 @ 13:32:44 - Error: Unable to verify domain - missing secret key.
+06-09-2017 @ 13:32:50 - Apple Pay: Apple Pay not enabled or Stripe is not an available gateway ( Apple Pay button disabled )
+06-09-2017 @ 13:32:50 - Apple Pay: Apple Pay not enabled or Stripe is not an available gateway ( Apple Pay button disabled )
+06-09-2017 @ 13:33:22 - Error: Unable to verify domain - missing secret key.
+06-09-2017 @ 13:33:22 - Error: Unable to verify domain - missing secret key.
+06-09-2017 @ 13:33:34 - Apple Pay: Apple Pay not enabled or Stripe is not an available gateway ( Apple Pay button disabled )
+06-09-2017 @ 13:33:34 - Apple Pay: Apple Pay not enabled or Stripe is not an available gateway ( Apple Pay button disabled )
+06-09-2017 @ 13:34:13 - Error: Unable to verify domain - missing secret key.
+06-09-2017 @ 13:34:14 - Your domain has been verified with Apple Pay!
+06-09-2017 @ 13:36:47 - Info: Begin processing payment for order 2366 for the amount of 3.00
+06-09-2017 @ 13:36:47 - charges request: Array
+(
+    [currency] => eur
+    [amount] => 300
+    [description] => stars - Order 2366
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => test test
+            [Customer Email] => kornulo@gmail.com
+        )
+
+    [source] => tok_1ASnI7Hf80cIAUFsedEjjc3R
+)
+
+06-09-2017 @ 13:36:48 - Processing response: stdClass Object
+(
+    [id] => ch_1ASnIBHf80cIAUFskawjtBWr
+    [object] => charge
+    [amount] => 300
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1ASnICHf80cIAUFsAoLH2a5l
+            [object] => balance_transaction
+            [amount] => 329
+            [available_on] => 1497571200
+            [created] => 1497015407
+            [currency] => usd
+            [description] => stars - Order 2366
+            [fee] => 40
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 40
+                            [application] => 
+                            [currency] => usd
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 289
+            [source] => ch_1ASnIBHf80cIAUFskawjtBWr
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1ASnIBHf80cIAUFskawjtBWr
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1497015407
+    [currency] => eur
+    [customer] => 
+    [description] => stars - Order 2366
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => test test
+            [Customer Email] => kornulo@gmail.com
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1ASnIBHf80cIAUFskawjtBWr/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1ASnI7Hf80cIAUFsrlgQdyxN
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 4
+            [exp_year] => 2020
+            [fingerprint] => HfjUU7O9VrfjTcjJ
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => kornulo@gmail.com
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+06-09-2017 @ 13:36:48 - Success: Stripe charge complete (Charge ID: ch_1ASnIBHf80cIAUFskawjtBWr)
+06-09-2017 @ 13:50:10 - Info: Begin processing payment for order 2367 for the amount of 1.00
+06-09-2017 @ 13:50:10 - charges request: Array
+(
+    [currency] => eur
+    [amount] => 100
+    [description] => stars - Order 2367
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [Customer Name] => test test
+            [Customer Email] => kornulo@gmail.com
+        )
+
+    [source] => tok_1ASnV4Hf80cIAUFsEVteIbvE
+)
+
+06-09-2017 @ 13:50:11 - Processing response: stdClass Object
+(
+    [id] => ch_1ASnV8Hf80cIAUFs9ekCGF8R
+    [object] => charge
+    [amount] => 100
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1ASnV9Hf80cIAUFsM91cZBzM
+            [object] => balance_transaction
+            [amount] => 110
+            [available_on] => 1497571200
+            [created] => 1497016210
+            [currency] => usd
+            [description] => stars - Order 2367
+            [fee] => 33
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 33
+                            [application] => 
+                            [currency] => usd
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 77
+            [source] => ch_1ASnV8Hf80cIAUFs9ekCGF8R
+            [sourced_transfers] => stdClass Object
+                (
+                    [object] => list
+                    [data] => Array
+                        (
+                        )
+
+                    [has_more] => 
+                    [total_count] => 0
+                    [url] => /v1/transfers?source_transaction=ch_1ASnV8Hf80cIAUFs9ekCGF8R
+                )
+
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1497016210
+    [currency] => eur
+    [customer] => 
+    [description] => stars - Order 2367
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [Customer Name] => test test
+            [Customer Email] => kornulo@gmail.com
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1ASnV8Hf80cIAUFs9ekCGF8R/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => card_1ASnV4Hf80cIAUFscnmMQZfH
+            [object] => card
+            [address_city] => 
+            [address_country] => 
+            [address_line1] => 
+            [address_line1_check] => 
+            [address_line2] => 
+            [address_state] => 
+            [address_zip] => 
+            [address_zip_check] => 
+            [brand] => Visa
+            [country] => US
+            [customer] => 
+            [cvc_check] => pass
+            [dynamic_last4] => 
+            [exp_month] => 12
+            [exp_year] => 2020
+            [fingerprint] => HfjUU7O9VrfjTcjJ
+            [funding] => credit
+            [last4] => 4242
+            [metadata] => stdClass Object
+                (
+                )
+
+            [name] => kornulo@gmail.com
+            [tokenization_method] => 
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+06-09-2017 @ 13:50:11 - Success: Stripe charge complete (Charge ID: ch_1ASnV8Hf80cIAUFs9ekCGF8R)

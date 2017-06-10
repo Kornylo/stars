@@ -8,6 +8,7 @@
  */
 
 get_header();
+
 ?>
 
 <!-- #Content -->

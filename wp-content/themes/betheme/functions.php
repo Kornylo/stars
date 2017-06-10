@@ -175,3 +175,35 @@ if( ! mfn_opts_get( 'plugin-visual' ) ){
 		vc_set_as_theme();
 	}
 }
+add_filter ('add_to_cart_redirect', 'redirect_to_checkout');
+
+function redirect_to_checkout() {
+global $woocommerce;
+$checkout_url = $woocommerce->cart->get_checkout_url();
+return $checkout_url;
+}
+
+
+
+
+
+
+
+
+
+function check_if_cart_has_product( $valid, $product_id, $quantity ) {  
+
+    if(!empty(WC()->cart->get_cart()) && $valid){
+        foreach (WC()->cart->get_cart() as $cart_item_key => $values) {
+            $_product = $values['data'];
+
+            if( $product_id == $_product->id ) {
+                unset(WC()->cart->cart_contents[$cart_item_key]);
+            }
+        }
+    }
+
+    return $valid;
+
+}
+add_filter( 'woocommerce_add_to_cart_validation', 'check_if_cart_has_product', 10, 3 );
